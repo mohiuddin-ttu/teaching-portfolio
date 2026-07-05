@@ -4,16 +4,16 @@ This repository hosts a self-contained GitHub Pages teaching portfolio for Md Mo
 
 ## Live Site Setup
 
-1. Create a new GitHub repository, for example:
+1. I create a new GitHub repository, for example:
    `teaching-portfolio`
 
-2. Upload these files:
+2. I upload these files:
    - `index.html`
    - `style.css`
    - `assets/`
    - `materials/`
 
-3. Go to:
+3. I gGo to:
    **Settings → Pages**
 
 4. Under **Build and deployment**, select:
@@ -21,11 +21,11 @@ This repository hosts a self-contained GitHub Pages teaching portfolio for Md Mo
    - Branch: `main`
    - Folder: `/root`
 
-5. Save. GitHub will generate a public URL.
+5. I saved it in GitHub, which generates a public URL.
 
 ## Replace Placeholder Files
 
-Replace:
+I replace:
 
 - `assets/Md_Mohiuddin_CV.pdf`
 - `materials/econometrics-syllabus.pdf`
@@ -33,14 +33,5 @@ Replace:
 - `materials/sample-lecture-slides.pdf`
 - `materials/sample-problem-set.pdf`
 
-with your final files using the same names.
+with my final files using the same names.
 
-## Edit Contact Information
-
-In `index.html`, replace:
-
-- `your.email@ttu.edu`
-- Google Scholar link
-- GitHub profile link
-
-with your actual information.
