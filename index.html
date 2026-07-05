@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Md Mohiuddin | Academic Website</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">Md Mohiuddin</div>
+    <nav>
+      <button class="nav-link active" data-page="home">Home</button>
+      <button class="nav-link" data-page="research">Research</button>
+      <button class="nav-link" data-page="teaching">Teaching</button>
+      <button class="nav-link" data-page="cv">CV</button>
+      <button class="nav-link" data-page="contact">Contact</button>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="home" class="page active">
+      <aside class="profile">
+        <img src="assets/profile.jpg" alt="Md Mohiuddin" class="profile-img" />
+        <h2>Md Mohiuddin</h2>
+        <p>Ph.D. Candidate in Economics<br>Texas Tech University</p>
+        <div class="icons">
+          <a href="mailto:your.email@ttu.edu" class="icon red">✉</a>
+          <a href="https://github.com/mohiuddin-ttu" class="icon black">GitHub</a>
+          <a href="#" class="icon blue">in</a>
+          <a href="assets/Md_Mohiuddin_CV.pdf" class="icon green">CV</a>
+        </div>
+      </aside>
+
+      <section class="content">
+        <p>
+          I am a Ph.D. Candidate (ABD) in STEM-designated Economics at
+          <a href="https://www.ttu.edu/">Texas Tech University</a>, specializing in
+          macroeconomics, applied econometrics, and structural quantitative modeling.
+          My research studies how households, firms, and regions adjust to energy,
+          climate, health, and technological shocks.
+        </p>
+
+        <div class="highlight-card">
+          <p class="label">Job Market Paper</p>
+          <h1>Consumer Demand and Household Welfare under Large Energy Price Shocks: Evidence and Structural Interpretation</h1>
+          <p class="subfield">Macroeconomics · Energy Economics · Consumption Dynamics</p>
+          <p>
+            This paper examines whether consumption smoothing, a central implication of
+            the Life-Cycle/Permanent-Income Hypothesis, remains stable during large
+            oil-price episodes. Using U.S. data and an empirical framework combining
+            IV-GMM, local projections, and Bayesian VAR analysis, the evidence indicates
+            that consumption dynamics are strongly state-dependent.
+          </p>
+        </div>
+      </section>
+    </section>
+
+    <section id="research" class="page">
+      <h1>Research</h1>
+      <div class="paper"><p class="label">Job Market Paper</p><h2>Consumer Demand and Household Welfare under Large Energy Price Shocks</h2><p>Studies oil-price shocks, household consumption smoothing, and welfare using IV-GMM, local projections, Bayesian VARs, and structural interpretation.</p></div>
+      <div class="paper"><h2>Wildfire Shocks and Local Employment Dynamics</h2><p>Examines county-level labor-market adjustment to wildfire exposure using spatial panel methods, local projections, and regional heterogeneity analysis.</p></div>
+      <div class="paper"><h2>Technological Rivalry and the Reorganization of Strategic Trade Networks</h2><p>Studies how AI-related technological exposure reshapes U.S. strategic trade concentration and dependence on China-linked supply networks.</p></div>
+      <div class="paper"><h2>Medicare Eligibility and Household Financial Outcomes</h2><p>Uses a fuzzy regression discontinuity design around age 65 to estimate the effect of Medicare eligibility on utilization, out-of-pocket spending, debt, labor supply, and retirement.</p></div>
+    </section>
+
+    <section id="teaching" class="page">
+      <h1>Teaching Portfolio</h1>
+      <div class="paper"><h2>Teaching Philosophy</h2><p>My teaching philosophy emphasizes conceptual clarity, analytical discipline, and applied problem-solving. I help students move from intuition to formal economic models and then to evidence-based policy interpretation.</p></div>
+      <div class="paper"><h2>Teaching Experience</h2><ul><li>Graduate Part-Time Instructor, Principles of Macroeconomics, Texas Tech University</li><li>Graduate Teaching Assistant, Intermediate Microeconomics, Texas Tech University</li><li>Faculty Member, University of Chittagong, Bangladesh</li></ul></div>
+      <div class="paper"><h2>Teaching Materials</h2><ul><li><a href="materials/econometrics-syllabus.pdf">Econometrics Syllabus</a></li><li><a href="materials/monopoly-price-discrimination-notes.pdf">Monopoly and Price Discrimination Notes</a></li><li><a href="materials/sample-lecture-slides.pdf">Sample Lecture Slides</a></li><li><a href="materials/sample-problem-set.pdf">Sample Problem Set</a></li></ul></div>
+    </section>
+
+    <section id="cv" class="page">
+      <h1>Curriculum Vitae</h1>
+      <p>My CV includes education, research, teaching experience, conference activity, awards, technical skills, and professional service.</p>
+      <a class="download" href="assets/Md_Mohiuddin_CV.pdf">Download CV</a>
+    </section>
+
+    <section id="contact" class="page">
+      <h1>Contact</h1>
+      <p><strong>Md Mohiuddin</strong></p>
+      <p>Ph.D. Candidate in Economics<br>Texas Tech University</p>
+      <p>Email: <a href="mailto:your.email@ttu.edu">your.email@ttu.edu</a></p>
+      <p>GitHub: <a href="https://github.com/mohiuddin-ttu">github.com/mohiuddin-ttu</a></p>
+      <p>LinkedIn: <a href="#">Add LinkedIn URL</a></p>
+      <p>Google Scholar: <a href="#">Add Google Scholar URL</a></p>
+    </section>
+  </main>
+
+  <script>
+    const buttons = document.querySelectorAll(".nav-link");
+    const pages = document.querySelectorAll(".page");
+    buttons.forEach(button => {
+      button.addEventListener("click", () => {
+        const target = button.dataset.page;
+        buttons.forEach(btn => btn.classList.remove("active"));
+        pages.forEach(page => page.classList.remove("active"));
+        button.classList.add("active");
+        document.getElementById(target).classList.add("active");
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    });
+  </script>
+</body>
+</html>
